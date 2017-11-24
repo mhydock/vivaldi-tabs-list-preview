@@ -1,0 +1,91 @@
+.tab .close { /* move close button to right and always show. This is more of a macOS issue */
+	display: inline !important;	
+	order: 1 !important;
+	margin-right: 6px !important;
+}
+
+.tab .tab-audio{ /* move audio button to left  */
+	order: -1 !important;
+}
+
+.tab .favicon{ /* always show favicon, on Mac it disappears when you mouseover  */
+	display: inline !important;
+	margin-left: 0 !important;
+}
+
+#vivaldi-tooltip .tooltip {
+	width: auto !important;
+	height: auto !important;
+	max-height: 90% !important;
+	margin-top: .5em;
+	overflow-y: auto;
+}
+
+#vivaldi-tooltip .tooltip .tab-solo,
+#vivaldi-tooltip .tooltip .tab-group {
+	background-color: var(--colorBgLight) !important;
+	border-bottom-left-radius: .125em !important;
+	border-bottom-right-radius: .125em !important;
+
+	width: 500px !important;
+	box-shadow: 0px 2px 4px rgba(0,0,0,.25) !important;
+}
+
+#vivaldi-tooltip .tooltip .tab-group {
+    flex-wrap: nowrap !important;
+	flex-direction: column !important;
+}
+
+#vivaldi-tooltip .tooltip .tooltip-item {
+	background-color: transparent !important;
+	border-bottom: 1px solid rgba(0,0,0, .1) !important;
+    width: 100% !important;
+	height: 90px !important;
+	min-height: 90px !important;
+	flex-direction: row !important;
+    margin: 0 !important;
+	z-index: 1 !important;
+	box-shadow: initial !important;
+}
+
+#vivaldi-tooltip .tooltip .tooltip-item:hover {
+	box-shadow: 0px 2px 4px rgba(0,0,0, .3) !important;
+	border-bottom-color: transparent !important;
+}
+
+#vivaldi-tooltip .tooltip .tooltip-item.last-active {
+	z-index: 0 !important;
+	box-shadow: 0px 2px 4px rgba(0,0,0, .3) inset !important;
+	border-bottom-color: transparent !important;
+    background-color: rgba(0,0,0, .2) !important;
+}
+
+#vivaldi-tooltip .tooltip .tooltip-item .thumbnail-image {
+	background-color: transparent !important;
+	background-repeat: no-repeat;
+	background-clip: padding-box;
+
+	border: .75em solid transparent !important;
+    width: 160px !important;
+    height: 100% !important;
+    min-width: 160px !important;
+	max-height: 100% !important;
+	padding: .25em !important; 
+	flex: 0 0 auto !important;
+	z-index: 0 !important;
+}
+
+#vivaldi-tooltip .tooltip .tooltip-item .thumbnail-caption {
+    flex: 1 !important;
+	min-width: 10px !important;
+	padding: 6px 0px !important;
+}
+
+#vivaldi-tooltip .tooltip .tooltip-item .thumbnail-caption .thumbnail-text {
+	white-space: normal !important;
+}
+
+#vivaldi-tooltip .tooltip .tooltip-item .thumbnail-caption .close {
+    order: initial !important;
+    margin: auto 6px !important;
+}
