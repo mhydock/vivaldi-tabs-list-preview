@@ -1,7 +1,7 @@
 # Tab Stack List Previews for Vivaldi
 This repository contains UI customizations for the Vivaldi browser to transform the tab stack previews, which by default displays as a grid, into a scrollable list. 
 
-![Tab Stack List Preview demonstration](https://i.imgur.com/3Gs1zSM.gifv)
+![Tab Stack List Preview demonstration](https://i.imgur.com/3Gs1zSM.gif)
 
 ## Dependencies
 * Python 3.6
