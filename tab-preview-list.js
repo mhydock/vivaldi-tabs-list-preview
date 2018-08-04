@@ -49,6 +49,13 @@ j_HTML.on('mouseenter', '.tab-position', function() {
         attributes: true,
         childList: true
     })
+
+    // In case the contents of the wrapper changed before
+    // the observer was constructed.
+    if (wrapper.children().length > 0) {
+        observer.disconnect();
+        setTooltipPosition(wrapper, x1, y1, w1, h1);
+    }
 })
 
 })();

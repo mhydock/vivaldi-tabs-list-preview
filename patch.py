@@ -35,12 +35,12 @@ def patch_browser_html(inst_dir):
 def patch_common_css(inst_dir):
     css_file = os.path.join(inst_dir, 'style', 'common.css')
     copy(css_file, css_file + '.bak')
-    with open(css_file, 'r') as css:
+    with open(css_file, 'r', encoding='utf-8') as css:
         lines = css.readlines()
 
     res = filter(lambda x: '@import "tab-preview-list.css";' in x, lines)
     if not list(res):
-        with open(css_file, 'w') as css:
+        with open(css_file, 'w', encoding='utf-8') as css:
             css.write('@import "tab-preview-list.css";\n\n')
             for line in lines:
                 css.write(line)
